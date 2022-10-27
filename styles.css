@@ -1137,6 +1137,7 @@ a class. by Emmanuel*/
     min-height: 100vh;
     width: 100%;
     padding: 20px;
+    position: relative;
 }
 
 .fr_head {
@@ -1162,4 +1163,40 @@ a class. by Emmanuel*/
     color: #0B0A33;
     font-size: 30px;
     font-weight: 700;
+}
+
+.questions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 20px;
+    padding: 30px 0;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 30px rgba(217, 219, 232, 0.5);
+    border-radius: 24px;
+    width: 40vw;
+}
+
+.question button {
+    padding: 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    background: #5335D9;
+    border-radius: 15px;
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.question p {
+    color: #0B0A33;
+    font-size: 15px;
 }
