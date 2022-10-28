@@ -1134,7 +1134,7 @@ a class. by Emmanuel*/
 }
 
 .frequent {
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     padding: 20px;
     position: relative;
@@ -1199,4 +1199,87 @@ a class. by Emmanuel*/
 .question p {
     color: #0B0A33;
     font-size: 15px;
+}
+
+.free_trail {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.free_btn {
+    background: #EFF0F6;
+    border-radius: 60px;
+    padding: 15px 32px;
+    border: none;
+    outline: none;
+    color: #5335D9;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.free_trail_card {
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    background: #5335D9;
+    border-radius: 50px;
+}
+
+.free_trail_text {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0 0 50px;
+}
+
+.free_trail_text h1,
+.free_trail_text h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.free_trail_text h2 {
+    padding: 10px 0;
+}
+
+.free_trail_text button {
+    background: #FFFFFF;
+    border-radius: 60px;
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    color: #5335D9;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free_trail_img {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.free_img1 {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.free_img2 {
+    width: 5%;
+    position: absolute;
+    top: 10vh;
+    right: 5%;
 }
