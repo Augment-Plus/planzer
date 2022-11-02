@@ -192,7 +192,7 @@ nav a:hover {
 .statistics {
     background-color: #F3F5FF;
     /* clip-path: polygon(0 0, 100% 0%, 100% 21%, 0 80%); */
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     margin-top: -5px;
     padding-top: 10px;
@@ -386,17 +386,20 @@ a class. by Emmanuel*/
 }
 
 .fourth {
-    background-color: white;
+    background-color: #F3F5FF;
     /* clip-path: polygon(0 0, 100% 0%, 100% 21%, 0 80%); */
-    height: 80vh;
+    min-height: 100vh;
     width: 100%;
     /* margin-right:2000px ; */
     margin-top: 0px;
     padding: 10px;
     position: relative;
     z-index: -2;
+    margin-top: 20vh;
 }
 
+
+/*
 .fourth::before {
     content: "";
     width: 100%;
@@ -406,18 +409,20 @@ a class. by Emmanuel*/
     background-color: #F3F5FF;
     transform: skewY(175deg);
     z-index: -2;
-    /* display: flex; */
+    display: flex;
 }
 
-.fourth::after {
+*/
+
+.fourth::before {
     content: "";
-    height: 100rem;
     width: 100%;
-    margin-left: 0px;
+    height: 20vh;
     position: absolute;
-    bottom: -100rem;
+    top: -10vh;
+    left: 0;
     background-color: #F3F5FF;
-    transform: skewY(180deg);
+    transform: skewY(175deg);
     z-index: -2;
 }
 
@@ -429,7 +434,8 @@ a class. by Emmanuel*/
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
     /*
     margin-right: -1000px;
     display: inline-block;
@@ -437,9 +443,9 @@ a class. by Emmanuel*/
 }
 
 .top-left h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .fourth-flex {
@@ -449,13 +455,13 @@ a class. by Emmanuel*/
 
 .fourth-flex h4 {
     color: #0B0A33;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .fourth-flex p {
     color: #7A7D9C;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .fourth-flex img {
@@ -470,6 +476,7 @@ a class. by Emmanuel*/
 .img-div img {
     margin-bottom: 100px;
     display: block;
+    width: 40px;
 }
 
 .top-left-flex {
@@ -490,15 +497,15 @@ a class. by Emmanuel*/
     position: relative;*/
     width: 50%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /*added this .by Emmanuel*/
 
-.top-right .higher_img,
 .top-right .lower_img {
-    height: 40%;
+    width: 90%;
 }
 
 
@@ -523,14 +530,18 @@ a class. by Emmanuel*/
     width: 100%;
     /* margin-right: -1000px; */
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
+    padding: 20px;
+    margin: 30px 0;
 }
 
 .bottom-left img {
     cursor: grab;
     display: inline-block;
     /*added width to the img*/
-    width: 50vw;
+    width: 40vw;
 }
 
 .bottom-inline {
@@ -542,11 +553,11 @@ a class. by Emmanuel*/
     top: 30px;
     */
     width: 50%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .bottom-inline h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -563,12 +574,12 @@ a class. by Emmanuel*/
     background-color: white;
     width: 47%;
     border-radius: 20px;
-    height: 300px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-left: 10px;
     text-align: center;
 }
@@ -602,9 +613,6 @@ a class. by Emmanuel*/
     min-height: 100vh;
     width: 100%;
     z-index: -2;
-    /*Why is this margin too much and why does it affect
-    the entire div when i change it*/
-    margin-top: 1550px;
     padding: 20px;
     position: relative;
 }
@@ -694,6 +702,10 @@ a class. by Emmanuel*/
     min-height: 50vh;
     min-width: 30vw;
     margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 20px;
 }
 
@@ -704,14 +716,14 @@ a class. by Emmanuel*/
 }
 
 .card_head img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 8px;
 }
 
 .card_head h1 {
     color: #4457FF;
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
     margin: 0 5px;
@@ -719,22 +731,25 @@ a class. by Emmanuel*/
 
 .card_head h1 span {
     color: #7A7D9C;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .card p {
     color: #7A7D9C;
-    font-size: 16px;
+    font-size: 14px;
     margin: 10px 0;
 }
 
 .card a {
     color: #4457FF;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 5px;
     text-decoration: none;
     cursor: pointer;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .for_individuals {
@@ -1059,8 +1074,9 @@ a class. by Emmanuel*/
 }
 
 .item_arti {
-    margin: 20px 0;
-    padding: 0 20px;
+    margin: 0 0;
+    padding: 30px;
+    background-color: #FFFFFF;
 }
 
 .arti_btn_text {
@@ -1094,4 +1110,352 @@ a class. by Emmanuel*/
     color: #7A7D9C;
     font-size: 15px;
     margin-top: 20px;
+}
+
+.arti_con_item2 {
+    width: 60vw;
+}
+
+.item2_div {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arti_con_item2 img {
+    height: 90%;
+    width: 50%;
+}
+
+.item2_text {
+    width: 100%;
+    padding: 0 0 0 30px;
+}
+
+.item2_text h2 {
+    color: #7A7D9C;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item2_text p {
+    color: #0B0A33;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.frequent {
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.fr_head {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fr_head button {
+    background: #EFF0F6;
+    border-radius: 60px;
+    padding: 7px 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #5335D9;
+}
+
+.fr_head h1 {
+    color: #0B0A33;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.questions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 20px;
+    padding: 30px 0;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 30px rgba(217, 219, 232, 0.5);
+    border-radius: 24px;
+    width: 40vw;
+}
+
+.question button {
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    background: #5335D9;
+    border-radius: 15px;
+    margin: 0 20px 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.question p {
+    color: #0B0A33;
+    font-size: 15px;
+}
+
+#quest {}
+
+.question .answer {
+    display: none;
+    color: #FFFFFF;
+}
+
+.question button .bx-x {
+    display: none;
+}
+
+.free_trail {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.free_btn {
+    background: #EFF0F6;
+    border-radius: 60px;
+    padding: 15px 32px;
+    border: none;
+    outline: none;
+    color: #5335D9;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.free_trail_card {
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    background: #5335D9;
+    border-radius: 50px;
+}
+
+.free_trail_text {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0 0 50px;
+}
+
+.free_trail_text h1,
+.free_trail_text h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.free_trail_text h2 {
+    margin: 20px 0;
+}
+
+.free_trail_text button {
+    background: #FFFFFF;
+    border-radius: 60px;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    color: #5335D9;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free_trail_img {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+.free_img1 {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.free_img2 {
+    width: 5%;
+    position: absolute;
+    top: 10vh;
+    right: 5%;
+}
+
+.newslatter_links {
+    height: 80vh;
+    width: 100%;
+    border-top: 2px solid #D7D6D6;
+    border-bottom: 2px solid #D7D6D6;
+    display: flex;
+    padding: 20px;
+}
+
+.newslatter {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.news_logo {
+    margin: 10px 0;
+}
+
+.news_logo img {
+    height: 30px;
+}
+
+.newslatter p {
+    color: #7A7D9C;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+.news_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.news_form label {
+    color: #0B0A33;
+    font-size: 18px;
+}
+
+#news {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 30px rgba(217, 219, 232, 0.62);
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    height: 10vh;
+    margin: 10px 0 10px 10px;
+    padding: 0 20px;
+    outline: none;
+    color: rgba(11, 10, 51, 0.76);
+    font-size: 14px;
+}
+
+.news_form button {
+    color: #FFFFFF;
+    border-radius: 60px;
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    background: #5335D9;
+    border-radius: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 147px;
+    height: 40px;
+}
+
+.news_links {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.link h1 {
+    color: #4457FF;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: #7A7D9C;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_links i {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 30px rgba(217, 219, 232, 0.6);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#fb {
+    color: #3b5998;
+}
+
+#tw {
+    color: #00acee;
+}
+
+#ins {
+    background-color: #FFCC70;
+    background-image: linear-gradient(43deg, #FFCC70 0%, #C850C0 46%, #4158D0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+footer h3 {
+    color: #7A7D9C;
+    font-size: 14px;
 }
