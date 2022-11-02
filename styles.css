@@ -1200,7 +1200,7 @@ a class. by Emmanuel*/
 }
 
 .question button {
-    padding: 10px;
+    padding: 30px;
     color: #FFFFFF;
     border: none;
     outline: none;
@@ -1209,11 +1209,28 @@ a class. by Emmanuel*/
     margin: 0 20px 0 0;
     font-size: 20px;
     cursor: pointer;
+    animation: 2s fontSize infinite;
+}
+
+@keyframes fontSize {
+    from {}
+    to {}
 }
 
 .question p {
     color: #0B0A33;
     font-size: 15px;
+}
+
+#quest {}
+
+.question .answer {
+    display: none;
+    color: #FFFFFF;
+}
+
+.question button .bx-x {
+    display: none;
 }
 
 .free_trail {
