@@ -96,7 +96,7 @@ let answers = document.getElementById('answer');
 
 
 
-function queastionsControl() {
+function questionsControl() {
     questionDiv.style.transition = 'all .6s ease';
     btnIcon.style.display = 'none';
     btnIconclose.style.display = 'block';
@@ -108,7 +108,7 @@ function queastionsControl() {
     answers.style.display = 'block';
 };
 
-function queastionsControlclose() {
+function questionsControlclose() {
     questionDiv.style.transition = 'all .6s ease';
     btnIcon.style.display = 'block';
     btnIconclose.style.display = 'none';
@@ -133,7 +133,7 @@ let answers2 = document.getElementById('answer2');
 
 
 
-function queastionsControl2() {
+function questionsControl2() {
     questionDiv2.style.transition = 'all .6s ease';
     btnIcon2.style.display = 'none';
     btnIconclose2.style.display = 'block';
@@ -145,7 +145,7 @@ function queastionsControl2() {
     answers2.style.display = 'block';
 };
 
-function queastionsControlclose2() {
+function questionsControlclose2() {
     questionDiv2.style.transition = 'all .6s ease';
     btnIcon2.style.display = 'block';
     btnIconclose2.style.display = 'none';
@@ -169,7 +169,7 @@ let answers3 = document.getElementById('answer3');
 
 
 
-function queastionsControl3() {
+function questionsControl3() {
     questionDiv3.style.transition = 'all .6s ease';
     btnIcon3.style.display = 'none';
     btnIconclose3.style.display = 'block';
@@ -181,7 +181,7 @@ function queastionsControl3() {
     answers3.style.display = 'block';
 };
 
-function queastionsControlclose3() {
+function questionsControlclose3() {
     questionDiv3.style.transition = 'all .6s ease';
     btnIcon3.style.display = 'block';
     btnIconclose3.style.display = 'none';
@@ -205,7 +205,7 @@ let answers4 = document.getElementById('answer4');
 
 
 
-function queastionsControl4() {
+function questionsControl4() {
     questionDiv4.style.transition = 'all .6s ease';
     btnIcon4.style.display = 'none';
     btnIconclose4.style.display = 'block';
@@ -217,7 +217,7 @@ function queastionsControl4() {
     answers4.style.display = 'block';
 };
 
-function queastionsControlclose4() {
+function questionsControlclose4() {
     questionDiv4.style.transition = 'all .6s ease';
     btnIcon4.style.display = 'block';
     btnIconclose4.style.display = 'none';
@@ -240,7 +240,7 @@ let answers5 = document.getElementById('answer5');
 
 
 
-function queastionsControl5() {
+function questionsControl5() {
     questionDiv5.style.transition = 'all .6s ease';
     btnIcon5.style.display = 'none';
     btnIconclose5.style.display = 'block';
@@ -252,7 +252,7 @@ function queastionsControl5() {
     answers5.style.display = 'block';
 };
 
-function queastionsControlclose5() {
+function questionsControlclose5() {
     questionDiv5.style.transition = 'all .6s ease';
     btnIcon5.style.display = 'block';
     btnIconclose5.style.display = 'none';
@@ -276,7 +276,7 @@ let answers6 = document.getElementById('answer6');
 
 
 
-function queastionsControl6() {
+function questionsControl6() {
     questionDiv6.style.transition = 'all .6s ease';
     btnIcon6.style.display = 'none';
     btnIconclose6.style.display = 'block';
@@ -288,7 +288,7 @@ function queastionsControl6() {
     answers6.style.display = 'block';
 };
 
-function queastionsControlclose6() {
+function questionsControlclose6() {
     questionDiv6.style.transition = 'all .6s ease';
     btnIcon6.style.display = 'block';
     btnIconclose6.style.display = 'none';
