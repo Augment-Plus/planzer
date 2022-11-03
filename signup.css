@@ -108,25 +108,29 @@ p {
 }
 .container{
   background-color: white; 
-  height: 50vh;
-  width: 70%;
+  min-height: 50vh;
+  width: 80%;
   border-radius: 30px;
   margin: auto;
   padding: 25px;
+  z-index: 50;
   padding-left:30px;
-  margin-top: 70px;
+  margin-top: 30px;
   color: black;
 }
 
 .input{
-   display: block;
-   width: 76%;
-   border: 1px solid grey;
-   font-size: 13px;
-   margin-bottom:20px;
-   height: 20px;
-   border-radius: 10px;
-   padding: 7px;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,1);
+  font-size: 11px;
+  margin-bottom:20px;
+  height: 20px;
+ 
+  padding: 7px;
+  outline: none;
 }
 .check{
    margin: 0;
@@ -148,37 +152,60 @@ p {
  cursor: pointer;
 }
 .begin{
-    width: 35%;
-   font-size: 13px;
-   margin-bottom:10px;
-   height: 20%;
-   border-radius: 10px;
-   padding: 7px;
-   border: 1px solid grey;
+    width: 30%;
+    margin: 0 7%;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    font-size: 11px;
+    margin-bottom:20px;
+    height: 20px;
+   
+    padding: 7px;
+    outline: none;
+}
+.input:focus,.begin:focus{
+  border-bottom:1px solid #5335D9;
+ }
+ .check{
+  accent-color: #5335D9;
+}
+
+a{
+  text-decoration: none;
+  color: #5335D9;
+  font-size: 13px;
 }
 @media only screen and (max-width: 600px){
    .container{
-       background-color: black; 
-       height: 60vh;
-       width: 81%;
-       border-radius: 30px;
-       margin: auto;
-       padding: 25px;
-       padding-left:7%;
-       margin-top: 60px;
+    background-color: white; 
+    min-height: 40vh;
+    min-width: 70vw;
+    border-radius: 30px;
+    margin: auto;
+    padding: 20px;
+    
+    margin-top: 30px;
+    z-index: 100;
+ }
+ .input{
+  margin-bottom: 10px;
+ }
+ .begin{
+  margin-bottom: 10px;
+ }
     }
     a{
        font-size: 15px;
     }
     .begin{
-       width: 33%;
+      
       font-size: 13px;
-      margin-bottom:30px;
-      height: 20%;
-      border-radius: 10px;
-      padding: 7px;
+     
   }
-}
+  label{
+    font-size: 14px;
+  }
+
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
