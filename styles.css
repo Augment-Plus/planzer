@@ -468,6 +468,7 @@ a class. by Emmanuel*/
     width: 100%;
     padding: 10px;
     margin: auto;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     /*reduced grid gap .by Emmanuel*/
