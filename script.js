@@ -326,3 +326,4 @@ function questionsControlclose6() {
     questions6.style.display = 'block';
     answers6.style.display = 'none';
 };
+//The end
