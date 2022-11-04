@@ -50,6 +50,33 @@ if(usersCount > 30){
 animateValue();
 */
 
+//toggle menu
+let openN = document.getElementById('nav_open');
+let closeN = document.getElementById('nav_close');
+let nav_2 = document.getElementById('nav_2');
+let nav_3 = document.getElementById('nav_3');
+
+openN.addEventListener('click', function() {
+    this.style.display = 'none';
+    closeN.style.display = 'block';
+    nav_2.style.transition = '.4s';
+    nav_3.style.transition = '.4s';
+    nav_2.style.left = '0';
+    nav_3.style.left = '0';
+})
+closeN.addEventListener('click', function() {
+    this.style.display = 'none';
+    openN.style.display = 'block';
+    nav_2.style.transition = '.4s';
+    nav_3.style.transition = '.4s';
+    nav_2.style.left = '-100%';
+    nav_3.style.left = '-100%';
+})
+
+
+
+
+
 let list01 = document.getElementById('list1');
 let list02 = document.getElementById('list2');
 let list03 = document.getElementById('list3');
