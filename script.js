@@ -75,7 +75,7 @@ closeN.addEventListener('click', function() {
 
 let scroll_nav = document.getElementById('nav');
 window.onscroll = function() {
-    if (document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 60) {
         scroll_nav.style.position = 'fixed';
         scroll_nav.style.background = '#fff'
     } else {
