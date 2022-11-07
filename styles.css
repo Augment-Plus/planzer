@@ -550,6 +550,7 @@ a class. by Emmanuel*/
     }
     .watermark {
         height: 40vh;
+        width: 70vw;
     }
     .flex-container {
         width: 100%;
