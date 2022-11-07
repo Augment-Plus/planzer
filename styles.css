@@ -2020,8 +2020,9 @@ footer h3 {
 
 @media only screen and (max-width: 500px) {
     footer {
-        height: 10vh;
-        padding: 0 5px;
+        min-height: 10vh;
+        padding: 10px 5px;
+        flex-direction: column;
     }
     .social_links i {
         font-size: 13px;
