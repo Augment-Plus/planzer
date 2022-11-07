@@ -73,6 +73,17 @@ closeN.addEventListener('click', function() {
     nav_3.style.left = '-100%';
 })
 
+let scroll_nav = document.getElementById('nav');
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 20) {
+        scroll_nav.style.position = 'fixed';
+        scroll_nav.style.background = '#fff'
+    } else {
+        scroll_nav.style.position = 'relative';
+        scroll_nav.style.background = '#F3F5FF'
+    }
+}
+
 
 
 
