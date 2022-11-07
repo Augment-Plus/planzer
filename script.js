@@ -1,11 +1,15 @@
+let subMenu1 = document.getElementById("subMenu");
+
 function toggleMenu() {
-    let subMenu = document.getElementById("subMenu");
-    subMenu.classList.toggle("display_drop");
+
+    subMenu1.classList.toggle("display_drop");
+    subMenu2.classList.remove("display_drop");
 }
+let subMenu2 = document.getElementById("subMenu2");
 
 function toggleMenu2() {
-    let subMenu = document.getElementById("subMenu2");
-    subMenu.classList.toggle("display_drop");
+    subMenu2.classList.toggle("display_drop");
+    subMenu1.classList.remove("display_drop");
 }
 //counting animationa
 
