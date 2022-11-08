@@ -1,11 +1,15 @@
+let subMenu1 = document.getElementById("subMenu");
+
 function toggleMenu() {
-    let subMenu = document.getElementById("subMenu");
-    subMenu.classList.toggle("display_drop");
+
+    subMenu1.classList.toggle("display_drop");
+    subMenu2.classList.remove("display_drop");
 }
+let subMenu2 = document.getElementById("subMenu2");
 
 function toggleMenu2() {
-    let subMenu = document.getElementById("subMenu2");
-    subMenu.classList.toggle("display_drop");
+    subMenu2.classList.toggle("display_drop");
+    subMenu1.classList.remove("display_drop");
 }
 //counting animationa
 
@@ -72,6 +76,17 @@ closeN.addEventListener('click', function() {
     nav_2.style.left = '-100%';
     nav_3.style.left = '-100%';
 })
+
+let scroll_nav = document.getElementById('nav');
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 60) {
+        scroll_nav.style.position = 'fixed';
+        scroll_nav.style.background = '#fff'
+    } else {
+        scroll_nav.style.position = 'relative';
+        scroll_nav.style.background = '#F3F5FF'
+    }
+}
 
 
 
@@ -326,3 +341,4 @@ function questionsControlclose6() {
     questions6.style.display = 'block';
     answers6.style.display = 'none';
 };
+//The end
